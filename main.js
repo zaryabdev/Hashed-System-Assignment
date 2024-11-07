@@ -68,7 +68,7 @@ function buildContent(restaurant) {
     const content = document.createElement("div");
     const name = restaurant ? restaurant.store?.name || "Restaurant" : "Restaurant";
 
-    content.classList.add("property");
+    content.classList.add("restaurent");
     content.innerHTML = `
       <div class="icon">
           <i aria-hidden="true" class="fa-solid fa-hotel" title="${name}"></i>

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff">
   <title>Vanilla Tailwind CSS Boilerplate</title>
   <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
@@ -15,11 +16,134 @@
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4vbeiurx5i8VjYzn-muTWLtKu23IfljQ&libraries=places"
     defer=""></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <script type="module" src="main.js" defer></script>
 </head>
 
-<body class="px-4 h-screen flex items-center justify-center bg-gray-500">
-  <div id="map"></div>
+<body class="font-outfit flex flex-col">
+  <header class="fixed w-full h-64">
+    <div class="hidden md:flex items-center justify-between px-6 h-12 bg-emerald-800">
+      <div class="flex items-center">
+        <span class="p-1">
+          <img src="./assets/icons/Notification.svg" alt="Notification Icon" />
+        </span>
+        <p class="text-white">Delivery lead time will be impacted due to COVID-19. Stay safe!</p>
+      </div>
+      <div class="flex gap-x-4 text-white">
+        <div class="opacity-50">Select Language</div>
+        <p class="font-bold">English</p>
+        <span class="opacity-50">|</span>
+        <p class="opacity-50">العربیہ</p>
+      </div>
+    </div>
+    <nav class="w-full shadow-md">
+      <div class="flex items-center justify-between border-gray-200 py-2 px-12">
+        <div class="flex gap-4">
+          <span class="flex gap-1 items-end">
+            <span id="D-logo">
+              <img src="./assets/icons/Vector.svg" alt="Brand Logo" />
+            </span>
+            <span class="logo">
+              <img src="./assets/icons/deelly.svg" alt="Brand Logo" />
+            </span>
+          </span>
+          <div id="country-select"
+            class="flex border w-fit border-green-600  gap-4 justify-center items-center rounded-full px-4 py-2">
+            <img src="./assets/icons/flag.png" class="h-4 w-6" alt="Pakistan Flag">
+            <p>Pakistan</p>
+            <span id="arrow">
+              <img src="./assets/icons/Down_Arrow.svg" alt="Arrow" />
+            </span>
+          </div>
+        </div>
+        <div id="setting-section" class="flex gap-8">
+          <div class="flex gap-4">
+            <div class="flex gap-2 w-96 items-center justify-start border h-full py-2 px-2 rounded-lg">
+              <span id="search-icon">
+                <img src="./assets/icons/Search_Icon.svg" alt="Search" />
+              </span>
+              <p class="opacity-80">
+                Search...
+              </p>
+            </div>
+            <div>
+              <div
+                class="bg-gradient-to-r from-cyan-500 to-blue-500 h-12 w-12 rounded-md flex items-center justify-center">
+                <span id="setting-icon">
+                  <img src="./assets/icons/Setting_Icon.svg" alt="Setting" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-items-start gap-4">
+            <div class="rounded-full bg-gray-200 h-12 w-12 flex items-center justify-center relative">
+              <span id="cart-icon" class="">
+                <img src="./assets/icons/Buy.svg" alt="Cart" />
+              </span>
+              <span
+                class="rounded-full bg-yellow-500 border-2 border-white h-8 w-8 flex items-center justify-center absolute -top-2 -right-2 text-sm font-bold">
+                03
+              </span>
+            </div>
+            <div>
+              <span id="profile-icon">
+                <div class="rounded-full bg-gray-200 h-12 w-12 flex items-center justify-center">
+                  <span id="profile-icon" class="">
+                    <img src="./assets/icons/Profile.svg" alt="Profile" />
+                  </span>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-2 px-12 mt-2">
+        <ul class="flex items-center justify-start gap-x-24">
+          <li class="flex items-center justify-start gap-2 py-2">
+            <span id="home-icon" class="">
+              <img src="./assets/icons/Home.svg" alt="Home" />
+            </span>
+            <a href="">HOME</a>
+          </li>
+          <li class="flex items-center justify-start gap-2 py-2">
+            <span id="dinning-icon" class="">
+              <img src="./assets/icons/Dinning.svg" alt="Dinning" />
+
+            </span>
+            <a href="">DiNNING</a>
+          </li>
+          <li class="flex items-center justify-start gap-2 py-2">
+            <span id="salon-icon" class="">
+              <img src="./assets/icons/Salon.svg" alt="Salon" />
+
+            </span>
+            <a href="">SALON/SPA</a>
+          </li>
+          <li class="flex items-center justify-start gap-2 py-2">
+            <span id="entertainment-icon" class="">
+              <img src="./assets/icons/Entetainment.svg" alt="Entetainment" />
+
+            </span>
+            <a href="">ENTERTAINMENT</a>
+          </li>
+          <li class="flex items-center justify-start gap-2 py-2">
+            <span id="home-services-icon" class="">
+              <img src="./assets/icons/Home_Services.svg" alt="Home_Services" />
+            </span>
+            <a href="">HOME SERVICES</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="h-screen">
+
+  </div>
+  <div class="p-4">
+    <div id="map"></div>
+  </div>
 </body>
 
 </html>
