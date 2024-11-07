@@ -1,6 +1,5 @@
 {
-  "name": "vanilla-tailwindcss-boilerplate",
-  "private": true,
+  "name": "hashed-system-assignment",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
