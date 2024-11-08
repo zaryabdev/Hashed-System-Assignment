@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hashed System Assesment</title>
-  <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+
+  <!-- <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/3.7.0/mapbox-gl.js"
@@ -14,7 +15,8 @@
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4vbeiurx5i8VjYzn-muTWLtKu23IfljQ&libraries=places"
-    defer=""></script>
+    defer=""></script> -->
+
 
   <script type="module" src="main.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,9 +238,9 @@
         <div class="w-full">
           <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight ">
             Nearby
-            <span class="text-emerald-600 inline-block">
+            <span class="text-emerald-600 w-24 inline-block">
               Deals
-              <img src="./assets/icons/Underline.svg" class="" />
+              <img src="./assets/icons/Underline_sm.svg" class="" />
             </span>
           </h1>
           <p>Explore nearby deals on map and buy deals to enjoy quality food with your family</p>
@@ -295,9 +297,53 @@
       </div>
     </div>
   </section>
-  <div class="p-4">
+  <section class="bg-white ">
+    <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-16">
+      <div class="border rounded-3xl flex  justify-around py-12">
+        <div class="flex items-center justify-center">
+          <img src="./assets/icons/Phone.png" alt="">
+        </div>
+        <div class="flex items-center justify-center">
+          <div class="w-full">
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight ">
+              Download Our App To <br>
+              Get Amazing
+              <span class="text-emerald-600 w-24 inline-block">
+                Deals
+                <img src="./assets/icons/Underline_sm.svg" class="" />
+              </span>
+            </h1>
+            <p class="w-96 text-sm">Get new deals every day. Top deals have the best offers and share
+              them with you. To avail of offers, find our app in the play store</p>
+            <div class="flex justify-start gap-4 mt-8">
+              <img src="./assets/icons/Android-App-Icon-Black.png" alt="">
+              <img src="./assets/icons/Apple-App-Icon-Black.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-yellow-100 relative">
+    <div class="flex items-center justify-center gap-8 h-52">
+      <p class="font-medium text-2xl">For inquiries and more information</p>
+      <button class="bg-emerald-800 px-6 py-2 rounded-full text-white font-medium">Get in Touch</button>
+    </div>
+    <img src="assets/icons/D_background.svg" alt="" class="absolute text-black right-0 bottom-0">
+  </section>
+  <div class="p-4 bg-slate-400">
     <div id="map"></div>
   </div>
+  <footer>
+    <div class="flex justify-around">
+      <div>
+        <img src="./assets/icons/Vector.svg" alt="Brand Logo" />
+        <h1></h1>
+      </div>
+      <div></div>
+      <div></div>
+    </div>
+  </footer>
 </body>
 
 </html>
