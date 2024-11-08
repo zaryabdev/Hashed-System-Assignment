@@ -136,5 +136,20 @@ const checkVisibility = () => {
 
 window.addEventListener('scroll', checkVisibility);
 
+const hearts = document.querySelectorAll('.heart');
+
+hearts.forEach(heart => {
+    const id = heart.attributes.id;
+    heart.addEventListener('click', () => changeColor(id));
+});
 
 
+function changeColor(id) {
+    const hearts = document.querySelectorAll('.heart');
+    hearts.forEach(heart => {
+        const thisId = heart.attributes.id;
+        if (thisId.value == id.value) {
+            heart.style.backgroundColor = '#E11D48';
+        }
+    });
+}
