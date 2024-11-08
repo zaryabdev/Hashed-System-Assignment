@@ -134,7 +134,7 @@ const checkVisibility = () => {
     }
 };
 
-
 window.addEventListener('scroll', checkVisibility);
+
 
 
