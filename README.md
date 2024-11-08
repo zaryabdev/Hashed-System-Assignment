@@ -1,4 +1,3 @@
-https://developers.google.com/maps/documentation/javascript/advanced-markers/html-markers#maps_advanced_markers_html-css
+# Hashed-System-Assignment
 
-https://hashed-system.netlify.app/
-https://nearest-tailwind-color.netlify.app/
+Live at https://hashed-system.netlify.app/
