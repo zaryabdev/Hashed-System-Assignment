@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Hashed System Assesment</title>
 
   <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
@@ -40,7 +41,22 @@
         <p class="opacity-50">العربیہ</p>
       </div>
     </div>
-    <nav class="w-full h-36 shadow-md">
+    <nav class="block md:hidden">
+      <div class="flex justify-between p-4 shadow-md">
+        <img src="./assets/icons/MENU.svg" alt="">
+        <img src="./assets/icons/Deelly Logo.svg" alt="">
+        <div class="rounded-full bg-gray-200 h-12 w-12 flex items-center justify-center relative">
+          <span id="cart-icon" class="">
+            <img src="./assets/icons/Buy.svg" alt="Cart" />
+          </span>
+          <span
+            class="rounded-full bg-yellow-500 border-2 border-white h-8 w-8 flex items-center justify-center absolute -top-2 -right-2 text-sm font-bold">
+            03
+          </span>
+        </div>
+      </div>
+    </nav>
+    <nav class="hidden md:block w-full h-36 shadow-md">
       <div class="flex items-center justify-between border-gray-200 py-2 px-12">
         <div class="flex gap-4">
           <span class="flex gap-1 items-end">
@@ -140,7 +156,7 @@
       </div>
     </nav>
   </header>
-  <div class="h-48 "></div>
+  <div class="h-20 md:h-48"></div>
   <section id="hero-section" class="bg-white">
     <div class="grid lg:gap-8 lg:grid-cols-12 xl:gap-0 relative">
       <!-- <img src="assets/icons/background-building.png" class="absolute z-0 place-self-center bottom-0 "> -->
@@ -648,9 +664,13 @@
     </div>
     <img src="assets/icons/D_background.svg" alt="" class="absolute text-black right-0 bottom-0">
   </section>
-  <div class=" bg-slate-400">
+
+  <div class="bg-slate-400">
     <div id="map"></div>
   </div>
+  <center>
+    <div id="message" class="py-2 text-gray-500"></div>
+  </center>
   <footer>
     <div class="flex justify-around my-20">
       <div class="flex gap-8 items-start">

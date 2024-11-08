@@ -10,6 +10,8 @@ async function getData() {
         }
         const res = await response.json();
         console.log(`Fetched ${res.data.length} records.`);
+        const message = document.getElementById('message');
+        message.innerText = `Fetched total ${res.data.length} records.`;
         return res.data;
     } catch (error) {
         console.error(error.message);
@@ -21,7 +23,7 @@ async function initMap() {
     // Request needed libraries.
     const { Map } = await google.maps.importLibrary("maps");
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-    const center = { lat: 31.520, lng: 74.358 };
+    const center = { lat: 25.204, lng: 55.270 };
     const map = new Map(document.getElementById("map"), {
         zoom: 10,
         center,
