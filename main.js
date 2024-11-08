@@ -98,7 +98,41 @@ function buildContent(restaurant) {
       `;
     return content;
 }
-
-
-
 initMap();
+
+const counterSection = document.getElementById('counter-section');
+
+
+const startAnimation = () => {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+    counters.forEach(counter => {
+        const animate = () => {
+            debugger;
+            const value = +counter.getAttribute('till');
+            const data = +counter.innerText;
+
+            const time = value / speed;
+            if (data < value) {
+                counter.innerText = Math.ceil(data + time);
+                setTimeout(animate, 1);
+            } else {
+                counter.innerText = `${value}+`;
+            }
+        };
+
+        animate();
+    });
+};
+
+const checkVisibility = () => {
+    if (counterSection.getBoundingClientRect().top < window.innerHeight) {
+        startAnimation();
+        window.removeEventListener('scroll', checkVisibility);
+    }
+};
+
+
+window.addEventListener('scroll', checkVisibility);
+
+
