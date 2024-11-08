@@ -110,7 +110,7 @@ const startAnimation = () => {
     const speed = 200;
     counters.forEach(counter => {
         const animate = () => {
-            debugger;
+
             const value = +counter.getAttribute('till');
             const data = +counter.innerText;
 

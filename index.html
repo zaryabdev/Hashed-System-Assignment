@@ -158,7 +158,7 @@
   </header>
   <div class="h-20 md:h-48"></div>
   <section id="hero-section" class="bg-white">
-    <div class="grid lg:gap-8 lg:grid-cols-12 xl:gap-0 relative">
+    <div class="h-screen md:h-full grid lg:gap-8 lg:grid-cols-12 xl:gap-0 relative">
       <!-- <img src="assets/icons/background-building.png" class="absolute z-0 place-self-center bottom-0 "> -->
       <!-- style="background-image: url('./assets/icons/background-building.png')" -->
       <div class="place-self-center lg:col-span-7 ">
@@ -180,7 +180,7 @@
       <div class="lg:mt-0 lg:col-span-5 lg:flex bg-gray-200 relative">
         <img src="./assets/icons/play.png" alt=""
           class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <video width="100%" height="240" autoplay muted>
+        <video width="100%" height="100%" class="bg-cover" autoplay muted>
           <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
             type="video/mp4">
           Your browser does not support the video tag.
@@ -190,7 +190,7 @@
   </section>
   <section id="services-section" class="bg-white relative">
     <div class="shadow-lg p-8 bg-white rounded-md  w-10/12 absolute m-auto left-0 right-0 transform translate-y-[-50%]">
-      <div class="flex gap-4 my-4">
+      <div class="flex flex-col md:flex-row   gap-4 my-4">
         <div class="flex gap-2 w-full items-center justify-between border h-full py-2 px-2 rounded-lg">
           <p class="opacity-80">
             Dinning
@@ -210,14 +210,14 @@
           <img src="./assets/icons/Down_Arrow.svg" alt="Arrow" />
         </div>
       </div>
-      <div class="flex gap-4">
-        <div class="flex gap-2 w-96 items-center justify-between border h-full py-2 px-2 rounded-lg">
+      <div class="flex flex-col md:flex-row gap-4">
+        <div class="flex gap-2 w-full items-center justify-between border h-full py-2 px-2 rounded-lg">
           <p class="opacity-80">
             Lahore
           </p>
           <img src="./assets/icons/Down_Arrow.svg" alt="Arrow" />
         </div>
-        <div class="flex gap-2 w-96 items-center justify-between border h-full py-2 px-2 rounded-lg">
+        <div class="flex gap-2 w-full items-center justify-between border h-full py-2 px-2 rounded-lg">
           <p class="opacity-80">
             Destination
           </p>
@@ -231,12 +231,11 @@
             Search...
           </p>
         </div>
-        <button class="bg-emerald-800 px-6 py-2  w-fit rounded-full text-white font-medium">View on Map</button>
-
+        <button class="bg-emerald-800 px-6 py-2  w-full md:w-fit rounded-full text-white font-medium">Search</button>
       </div>
     </div>
-    <div class="max-w-screen-xl px-4 pb-8 mt-48 mx-auto  lg:pb-16">
-      <div class="grid grid-cols-2 gap-8 pb-12 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 border-b">
+    <div class="max-w-screen-xl px-4 pb-8 md:mt-10 mt-64  mx-auto  lg:pb-16">
+      <div class="hidden md:grid grid-cols-2 gap-8 pb-12 mt-32 sm:gap-12 sm:grid-cols-3 lg:grid-cols-6 border-b">
         <div class="my-2 flex flex-col items-center">
           <img src="./assets/icons/service_1.png" />
           <span class="mt-2">Dinning</span>
@@ -262,8 +261,8 @@
           <span class="mt-2">Saloon/Spa</span>
         </div>
       </div>
-      <div class="flex items-end justify-between">
-        <div class="flex   px-2 m-4 border-r">
+      <div class="flex flex-col md:flex-row  items-end justify-between">
+        <div class="flex py-2 md:px-2 m-4  border-b md:border-r">
           <div class="flex items-center">
             <img src="./assets/icons/Discount.svg" class="m-4" />
           </div>
@@ -310,7 +309,8 @@
           <p class="w-full">Explore nearby deals on map and buy deals to enjoy quality food with your family</p>
         </div>
         <div>
-          <button class="bg-emerald-800 px-6 py-2  w-fit rounded-full text-white font-medium">View on Map</button>
+          <button class=" hidden md:block bg-emerald-800 px-6 py-2  w-fit rounded-full text-white font-medium">View on
+            Map</button>
         </div>
       </div>
       <div class="flex mt-16 gap-4">
@@ -358,7 +358,7 @@
             </div>
           </div>
         </div>
-        <div class="">
+        <div class="hidden md:block">
           <div class="relative">
             <img src="./assets/icons/Food_1.png" alt="">
             <span class="bg-white rounded-full p-2 absolute right-4 top-4 shadow-md cursor-pointer">
@@ -402,7 +402,7 @@
             </div>
           </div>
         </div>
-        <div class="">
+        <div class="hidden md:block">
           <div class="relative">
             <img src="./assets/icons/Food_1.png" alt="">
             <span class="bg-white rounded-full p-2 absolute right-4 top-4 shadow-md cursor-pointer">
@@ -463,7 +463,8 @@
           <p class="w-full">Explore nearby deals on map and buy deals to enjoy quality food with your family</p>
         </div>
         <div>
-          <button class="bg-emerald-800 px-6 py-2  w-fit rounded-full text-white font-medium">View on Map</button>
+          <button class=" hidden md:block bg-emerald-800 px-6 py-2  w-fit rounded-full text-white font-medium">View on
+            Map</button>
         </div>
       </div>
       <div class="flex mt-16 gap-4">
@@ -511,7 +512,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-white rounded-3xl pb-4">
+        <div class="bg-white hidden md:block rounded-3xl pb-4">
           <div class="relative">
             <img src="./assets/icons/Food_1.png" alt="">
             <span class="bg-white rounded-full p-2 absolute right-4 top-4 shadow-md cursor-pointer">
@@ -555,7 +556,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-white rounded-3xl pb-4">
+        <div class="bg-white hidden md:block rounded-3xl pb-4">
           <div class="relative">
             <img src="./assets/icons/Food_1.png" alt="">
             <span class="bg-white rounded-full p-2 absolute right-4 top-4 shadow-md cursor-pointer">
@@ -604,13 +605,13 @@
   </section>
   <section class="bg-white ">
     <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-16">
-      <div class="border rounded-3xl flex  justify-around py-12">
+      <div class="border rounded-3xl flex  flex-col md:flex-row justify-around py-12">
         <div class="flex items-center justify-center">
           <img src="./assets/icons/Phone.png" alt="">
         </div>
-        <div class="flex items-center justify-center">
+        <div class="flex  md:block items-center justify-center">
           <div class="w-full">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight ">
+            <h1 class="max-w-2xl mb-4 mt-8 md:mt-auto text-4xl font-extrabold leading-none tracking-tight ">
               Download Our App To <br>
               Get Amazing
               <span class="text-emerald-600 w-24 inline-block">
@@ -630,7 +631,10 @@
     </div>
   </section>
   <section class="border-t bg-white">
-    <div id="counter-section" class="flex justify-evenly  my-8">
+    <div id="counter-section" class="flex  justify-evenly  my-8">
+      <div>
+
+      </div>
       <div class="p-1">
         <h1 id="deals-counter" till="75000" class="counter text-2xl font-bold">0</h1>
         <center>
@@ -658,11 +662,11 @@
     </div>
   </section>
   <section class="bg-yellow-100 relative">
-    <div class="flex items-center justify-center gap-8 h-52">
-      <p class="font-medium text-2xl">For inquiries and more information</p>
-      <button class="bg-emerald-800 px-6 py-2 rounded-full text-white font-medium">Get in Touch</button>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 h-52">
+      <p class="font-medium text-2xl ">For inquiries and more information</p>
+      <button class="bg-emerald-800 px-6 py-2  rounded-full text-white font-medium">Get in Touch</button>
     </div>
-    <img src="assets/icons/D_background.svg" alt="" class="absolute text-black right-0 bottom-0">
+    <img src="assets/icons/D_background.svg" alt="" class=" hidden md:block absolute text-black right-0 bottom-0 z-0">
   </section>
 
   <div class="bg-slate-400">
@@ -672,11 +676,11 @@
     <div id="message" class="py-2 text-gray-500"></div>
   </center>
   <footer>
-    <div class="flex justify-around my-20">
-      <div class="flex gap-8 items-start">
+    <div class="flex flex-col md:flex-row px-4 justify-around my-20">
+      <div class="flex flex-col md:flex-row gap-8 items-start">
         <img src="./assets/icons/Vector.svg" alt="Brand Logo" />
         <div class="flex flex-col gap-4">
-          <h1 class="text-2xl font-medium">Top Deals</h1>
+          <h1 class="text-2xl mt-2 font-medium">Top Deals</h1>
           <p class="w-72">
             Top Deals is an e-commerce site that connects businesses with customers by providing discounted offers,
             service coupons, or special offers. Top Deals brings a whole ecommerce platform for business owners and
@@ -685,7 +689,7 @@
         </div>
       </div>
       <div class="flex flex-col gap-4">
-        <h1 class="text-2xl font-medium">Our Company</h1>
+        <h1 class="text-2xl  mt-2 font-medium">Our Company</h1>
         <ul>
           <li class="mt-2">About Us</li>
           <li class="mt-2">Privacy & Policy</li>
@@ -695,15 +699,15 @@
         </ul>
       </div>
       <div>
-        <h1 class="text-2xl font-medium">Our Paymet Parteners</h1>
+        <h1 class="text-2xl mt-2 font-medium">Our Paymet Parteners</h1>
         <img src="./assets/icons/Group 1000004841.png" alt="" class="mt-4">
       </div>
 
     </div>
     <div class="mx-auto w-10/12 ">
-      <div class="flex items-center justify-between h-16">
+      <div class="flex flex-col md:flex-row  items-center justify-between h-16">
         <span>© deelly 2023 . All rights reserved.</span>
-        <img src="./assets/icons/Frame 1000001855.png" alt="">
+        <img src="./assets/icons/Frame 1000001855.png" alt="" class="p-2">
       </div>
     </div>
   </footer>
